@@ -1,15 +1,20 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <h1>Options Updater</h1>
+
+  <div class="container">
+    <Header />
+    <getBody />
+  </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
+import Header from "./components/Header.vue";
+import getBody from "./components/getBody.vue";
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    Header,
+    getBody,
   },
 };
 </script>
@@ -22,5 +27,19 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  width: 75%;
+  margin: 1%;
+}
+button {
+  margin: 1%;
+}
+
+.container {
+  width: 90%;
+  padding: 5%;
+}
+
+h1 {
+  padding: 1%;
 }
 </style>
